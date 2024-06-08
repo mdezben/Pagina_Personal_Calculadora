@@ -23,10 +23,12 @@ body{
 }
 
 .img1{
-    background-image:url('./img/yo.jpg') ;
+    background-image:url('./img/yo.jpg');
     background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
     background-position: center;
-    margin-left: 470px;
     border-radius: 20px;
     width: 350px;
     height: 350px;
@@ -55,9 +57,20 @@ td{
     background-color: #a3f1d09a;
     font-style: initial;
 }
-.list{
-    margin: 10px;
-    padding: 30px;
-    text-align: center;
-    align-items: center;
+@media(width<=768px){
+    .img1{
+        display: flex;
+        flex-direction: row;
+        width: 200px;
+        height: 200px;
+    }
+    .botonera{
+        flex-direction: column;
+    }  
+    .titulo{
+        font-size: 3em;
+    }  
+    .subtitulo{
+        font-size: 1.5em;
+    }
 }
